@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import * as XLSX from "xlsx";
 import { mergeSamples, normalizeHeader, parseRpaFile, sampleLabelForIndex } from "./rpaParser";
@@ -20,7 +21,7 @@ function workbookFile(name: string, rows: unknown[][]) {
 
 describe("RPA parser", () => {
   it("extracts A1:B13 metadata and row 15 headers from the provided Table A sample", async () => {
-    const bytes = await readFile("/Users/scarlett/dev/smart_board_2.0/row data table/raw_input_tableA.xlsx");
+    const bytes = await readFile(resolve(process.cwd(), "row data table/raw_input_tableA.xlsx"));
     const sample = await parseRpaFile(fileLike("raw_input_tableA.xlsx", bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength)), 0);
 
     expect(sample.label).toBe("Sample A");
