@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { SpreadsheetFile, Workbook } from "@oai/artifact-tool";
 
-const outputDir = "/Users/scarlett/dev/smart_board_2.0/outputs/rpa_mock_data";
+const outputDir = path.join(process.cwd(), "outputs/rpa_mock_data");
 const outputPath = path.join(outputDir, "rubber_rpa_mock_data.xlsx");
 
 const headers = [

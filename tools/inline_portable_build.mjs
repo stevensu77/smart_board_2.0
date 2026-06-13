@@ -4,7 +4,7 @@ import path from "node:path";
 const rootDir = process.cwd();
 const buildDir = path.join(rootDir, "dist-portable");
 const portableDir = path.join(rootDir, "portable");
-const outputPath = path.join(portableDir, "smart-board-2.0.html");
+const outputPath = path.join(portableDir, "LiData1.0.html");
 const indexPath = path.join(buildDir, "index.html");
 
 async function readAsset(assetPath) {

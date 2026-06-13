@@ -361,7 +361,7 @@ function App() {
     <main className="app-shell" data-highcharts-modules={highchartsModulesReady ? "ready" : highchartsModuleError ? "error" : "loading"}>
       <header className="app-header">
         <div>
-          <p className="eyebrow">Smart Board RPA</p>
+          <p className="eyebrow">LiData1.0</p>
           <h1>Local data workbench for RPA measurement files</h1>
         </div>
         <div className="stepper" aria-label="Workflow steps">

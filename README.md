@@ -1,6 +1,6 @@
-# Smart Board 2.0
+# LiData1.0
 
-Smart Board 2.0 is a local-first RPA spreadsheet visualization app. It lets you upload multiple `.csv`, `.xls`, or `.xlsx` files, parse RPA metadata and measurement rows in the browser, edit the merged table, and render Highcharts visualizations without a backend.
+LiData1.0 is a local-first RPA spreadsheet visualization app. It lets you upload multiple `.csv`, `.xls`, or `.xlsx` files, parse RPA metadata and measurement rows in the browser, edit the merged table, and render Highcharts visualizations without a backend.
 
 Uploaded files stay local to the browser. The app is designed for quick lab-data review, sample comparison, and chart iteration.
 
@@ -70,8 +70,8 @@ You do not need a Highcharts API key for local rendering. Highcharts licensing d
 Clone the repository:
 
 ```bash
-git clone https://github.com/stevensu77/smart_board_2.0.git
-cd smart_board_2.0
+git clone https://github.com/stevensu77/LiData1.0.git
+cd LiData1.0
 ```
 
 Install dependencies:
@@ -129,7 +129,7 @@ npm run build:portable
 The portable file is generated at:
 
 ```text
-portable/smart-board-2.0.html
+portable/LiData1.0.html
 ```
 
 The repository includes the latest generated portable HTML file at that path, so someone who downloads the repository ZIP can open it directly in a modern browser without running npm. You can also regenerate it after code changes with `npm run build:portable`. The app remains local-first: uploaded spreadsheets are parsed in the browser and are not sent to a server.
@@ -145,7 +145,7 @@ This project includes a GitHub Actions workflow for GitHub Pages:
 The Vite base path is configured for the project URL:
 
 ```text
-https://stevensu77.github.io/smart_board_2.0/
+https://stevensu77.github.io/LiData1.0/
 ```
 
 To enable deployment in GitHub:
@@ -173,7 +173,7 @@ GitHub will build the app and publish the `dist` output automatically.
 ## Project Structure
 
 ```text
-smart_board_2.0/
+LiData1.0/
   .github/workflows/deploy.yml
   row data table/
     raw_input_tableA.xlsx
