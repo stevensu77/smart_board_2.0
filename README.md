@@ -132,7 +132,7 @@ The portable file is generated at:
 portable/smart-board-2.0.html
 ```
 
-You can send that HTML file to another person. They can open it locally in a modern browser and use the app without running npm. The app remains local-first: uploaded spreadsheets are parsed in the browser and are not sent to a server.
+The repository includes the latest generated portable HTML file at that path, so someone who downloads the repository ZIP can open it directly in a modern browser without running npm. You can also regenerate it after code changes with `npm run build:portable`. The app remains local-first: uploaded spreadsheets are parsed in the browser and are not sent to a server.
 
 ## Deploy To GitHub Pages
 
