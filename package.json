@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc && vite build",
+    "build:portable": "tsc && vite build --config vite.portable.config.ts && node tools/inline_portable_build.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "test": "vitest run"
   },

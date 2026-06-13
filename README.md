@@ -118,6 +118,22 @@ Preview the production build locally:
 npm run preview
 ```
 
+## Portable Offline Build
+
+Create a single-file HTML build that can be opened by double-clicking, without installing dependencies:
+
+```bash
+npm run build:portable
+```
+
+The portable file is generated at:
+
+```text
+portable/smart-board-2.0.html
+```
+
+You can send that HTML file to another person. They can open it locally in a modern browser and use the app without running npm. The app remains local-first: uploaded spreadsheets are parsed in the browser and are not sent to a server.
+
 ## Deploy To GitHub Pages
 
 This project includes a GitHub Actions workflow for GitHub Pages:
